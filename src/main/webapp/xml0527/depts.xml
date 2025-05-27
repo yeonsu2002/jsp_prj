@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<depts>
+<dept>
+	<deptno>10</deptno>
+	<dname>개발부</dname>
+	<loc>서울</loc>
+</dept>
+<dept>
+	<dname>총무부</dname>
+	<deptno>20</deptno>
+	<loc>서울</loc>
+</dept>
+
+</depts>
