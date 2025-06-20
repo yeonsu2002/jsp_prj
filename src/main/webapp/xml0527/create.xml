@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <msg>안녕하세요?</msg>
+  <msg today="2025-05-27">안녕하세요?</msg>
+  <name>유연수</name>
 </root>

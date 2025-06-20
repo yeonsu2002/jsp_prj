@@ -3,7 +3,10 @@ package xml0527;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
+import org.jdom2.Attribute;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.output.Format;
@@ -24,7 +27,21 @@ public class CreateXML {
 		//자식노드에 값 설정
 		msgNode.setText("안녕하세요?");
 		
+		
+		Element nameNode=new Element("name");
+		nameNode.setText("유연수");
+		
+		
+		//자식노드에 속성을 설정
+		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+		//속성객체 생성
+		Attribute attr=new Attribute("today", sdf.format(new Date()));
+		//자식노드에 배치
+		msgNode.setAttribute(attr);
+		
+		
 		rootNode.addContent(msgNode);
+		rootNode.addContent(nameNode);
 		
 		doc.addContent(rootNode);
 		
@@ -39,6 +56,7 @@ public class CreateXML {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}//end catch
+		
 		
 		
 	}

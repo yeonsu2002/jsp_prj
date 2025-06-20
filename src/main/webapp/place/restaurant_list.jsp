@@ -103,7 +103,7 @@ pageContext.setAttribute("endNum", rDTO.getEndNum());
 pageContext.setAttribute("restList", restList);
 pageContext.setAttribute("fieldText", rDTO.getFieldText());
 
-%>
+%> 
 맛집 전체 <c:out value="${ totalPage }" />건
 
 	<div style="text-align: right;">
